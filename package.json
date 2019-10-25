@@ -1,0 +1,22 @@
+{
+  "name": "test-backlog-organization",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/y4izus/test-backlog-organization.git"
+  },
+  "author": "y4izus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/y4izus/test-backlog-organization/issues"
+  },
+  "homepage": "https://github.com/y4izus/test-backlog-organization#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

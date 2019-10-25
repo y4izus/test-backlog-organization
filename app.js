@@ -10,9 +10,10 @@ app.use(urlencoded({
 }))
 
 app.post('/issue-receive', (req, res) => {
-    const { body } = req
-    console.log('=====', body)
-    res.send(body)
+    const { action, issue } = req.body
+    action == 'labeled'
+        ? res.send(`LABELED TO: ${issue.label}`)
+        : res.send(`ACTION: ${action}`)
 })
 
 app.get('/', (req, res) => {

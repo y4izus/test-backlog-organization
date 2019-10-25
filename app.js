@@ -9,6 +9,14 @@ app.use(urlencoded({
     extended: false
 }))
 
-app.get('/', (req, res) => res.send('Hello World!'))
+app.post('/issue-receive', (req, res) => {
+    const { body } = req
+    console.log('=====', body)
+    res.send(body)
+})
+
+app.get('/', (req, res) => {
+    res.send('HOME')
+})
 
 app.listen(3000, () => console.log('Example app listening on port 3000!'))

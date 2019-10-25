@@ -12,7 +12,7 @@ app.use(urlencoded({
 app.post('/issue-receive', (req, res) => {
     const { action, issue } = req.body
     action == 'labeled'
-        ? res.send(`LABELED TO: ${issue.label}`)
+        ? res.send(`LABELED TO: ${issue.label.name}`)
         : res.send(`ACTION: ${action}`)
 })
 
